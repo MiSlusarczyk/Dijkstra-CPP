@@ -1,0 +1,97 @@
+Opis grafu:
+
+Wierzcholek: 0
+Lista sasiadow: 1 3; 4 3; 
+
+Wierzcholek: 1
+Lista sasiadow: 2 1; 
+
+Wierzcholek: 2
+Lista sasiadow: 3 3; 5 1; 
+
+Wierzcholek: 3
+Lista sasiadow: 1 3; 
+
+Wierzcholek: 4
+Lista sasiadow: 5 2; 
+
+Wierzcholek: 5
+Lista sasiadow: 0 6; 3 1; 
+
+
+Dane wejsciowe:
+
+Wierzcholek: 0
+Wierzcholki dla ktorych chcemy wyznaczyc polaczenie: 0 1 2 3 4 5;
+
+Wierzcholek: 1
+Wierzcholki dla ktorych chcemy wyznaczyc polaczenie: 0 1 2 3 4 5;
+
+Wierzcholek: 2
+Wierzcholki dla ktorych chcemy wyznaczyc polaczenie: 0 1 2 3 4 5;
+
+Wierzcholek: 3
+Wierzcholki dla ktorych chcemy wyznaczyc polaczenie: 0 1 2 3 4 5;
+
+Wierzcholek: 4
+Wierzcholki dla ktorych chcemy wyznaczyc polaczenie: 0 1 2 3 4 5;
+
+Wierzcholek: 5
+Wierzcholki dla ktorych chcemy wyznaczyc polaczenie: 0 1 2 3 4 5;
+
+
+Rozwiazanie:
+
+Wierzcholek: 0
+0>>0: 0 | 0:0
+0>>1: 0 | 1:3
+0>>2: 0->1 | 2:4
+0>>3: 0->4->5 | 3:6
+0>>4: 0 | 4:3
+0>>5: 0->4 | 5:5
+
+
+Wierzcholek: 1
+1>>0: 1->2->5 | 0:8
+1>>1: 1 | 1:0
+1>>2: 1 | 2:1
+1>>3: 1->2->5 | 3:3
+1>>4: 1->2->5->0 | 4:11
+1>>5: 1->2 | 5:2
+
+
+Wierzcholek: 2
+2>>0: 2->5 | 0:7
+2>>1: 2->5->3 | 1:5
+2>>2: 2 | 2:0
+2>>3: 2->5 | 3:2
+2>>4: 2->5->0 | 4:10
+2>>5: 2 | 5:1
+
+
+Wierzcholek: 3
+3>>0: 3->1->2->5 | 0:11
+3>>1: 3 | 1:3
+3>>2: 3->1 | 2:4
+3>>3: 3 | 3:0
+3>>4: 3->1->2->5->0 | 4:14
+3>>5: 3->1->2 | 5:5
+
+
+Wierzcholek: 4
+4>>0: 4->5 | 0:8
+4>>1: 4->5->3 | 1:6
+4>>2: 4->5->3->1 | 2:7
+4>>3: 4->5 | 3:3
+4>>4: 4 | 4:0
+4>>5: 4 | 5:2
+
+
+Wierzcholek: 5
+5>>0: 5 | 0:6
+5>>1: 5->3 | 1:4
+5>>2: 5->3->1 | 2:5
+5>>3: 5 | 3:1
+5>>4: 5->0 | 4:9
+5>>5: 5 | 5:0
+
